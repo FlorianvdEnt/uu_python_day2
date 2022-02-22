@@ -26,7 +26,7 @@ Line #      Hits         Time  Per Hit   % Time  Line Contents
     29     96347      33565.0      0.3     25.1          if(p > sqrt(n)):
 
 3c.
-I would somehow have to speed up the nested loops of the:
+I would somehow have to speed up the nested loops:
 
 # iterate through rows of X
 for i in range(len(X)):
@@ -46,4 +46,4 @@ It seems to be faster probably because you have to do less indexing at the final
 python matmult.py  2.98s user 0.03s system 97% cpu 3.087 total
 python matmult_fast.py  2.38s user 0.02s system 96% cpu 2.484 total
 
-about 2.38 is the best performance I can achieve.
+about 2.38 is the best performance I can achieve (without numpy, numba etc).
